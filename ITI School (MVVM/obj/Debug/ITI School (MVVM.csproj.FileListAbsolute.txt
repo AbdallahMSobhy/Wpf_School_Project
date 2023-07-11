@@ -1,0 +1,16 @@
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\bin\Debug\ITI School (MVVM.exe.config
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\bin\Debug\ITI School (MVVM.exe
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\bin\Debug\ITI School (MVVM.pdb
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.csproj.AssemblyReference.cache
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.csproj.SuggestedBindingRedirects.cache
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\MainWindow.g.cs
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\App.g.cs
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM_MarkupCompile.cache
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM_MarkupCompile.lref
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\MainWindow.baml
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.g.resources
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI_School__MVVM.Properties.Resources.resources
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.csproj.GenerateResource.cache
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.csproj.CoreCompileInputs.cache
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.exe
+D:\Sobhy\iTi\C8-WPF ( DAD)\Project\MVVM SCHOOL\ITI School (MVVM\ITI School (MVVM\obj\Debug\ITI School (MVVM.pdb

@@ -1,0 +1,90 @@
+﻿<Window x:Class="ITI_School__MVVM.Views.StudentsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITI_School__MVVM.Views"
+        mc:Ignorable="d"
+        Title="Students" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Resources/Background/Background.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.15*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Students" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Lucida Handwriting"></TextBlock>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock FontSize="15" Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Select Student Name :"></TextBlock>
+            <ComboBox ItemsSource="{Binding StudentsList}" SelectedItem="{Binding SelectedItemst}" Margin="10 10 0 10" Width="300" Height="30"></ComboBox>
+            <TextBlock FontSize="15" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Or"></TextBlock>
+            <Button Margin="0 10 0 10"   Width="100" Height="30" HorizontalAlignment="Right" Grid.Column="0"  Command="{Binding AddNewst}" Click="Button_Click" >
+                <ContentControl Content="Add New" FontSize="14" FontFamily="Cooper"></ContentControl>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4.5*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                    <TextBlock FontSize="15" Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Name :    "></TextBlock>
+                    <TextBox Text="{Binding StudentNamest ,UpdateSourceTrigger=PropertyChanged}" Margin="20 0 0 0" Width="300" Height="30"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                    <TextBlock FontSize="15" Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Id :          "></TextBlock>
+                    <TextBox Text="{Binding StudentIdst ,UpdateSourceTrigger=PropertyChanged}" Margin="20 0 0 0" Width="300" Height="30"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="2">
+                    <TextBlock FontSize="15" Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Geander :"></TextBlock>
+                    <ComboBox ItemsSource="{Binding GendarListst}" SelectedItem="{Binding StudentGenderst}" Margin="20 0 0 0" Width="300" Height="30" ></ComboBox>
+                    <DatePicker/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="3">
+                    <TextBlock FontSize="15" Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Subjects :"></TextBlock>
+                    <Grid Margin="20 0 0 0" Width="500" Height="30">
+                        <StackPanel Visibility="Hidden" VerticalAlignment="Center" x:Name="chkboxs" Orientation="Horizontal">
+                            <CheckBox x:Name="CheckBox1" Content="Arabic" Checked="CheckBox1_Checked" Unchecked="CheckBox1_notChecked"></CheckBox>
+                            <CheckBox Margin="10 0 0 0" x:Name="CheckBox2" Content="Chemistry" Checked="CheckBox1_Checked" Unchecked="CheckBox1_notChecked"></CheckBox>
+                            <CheckBox Margin="10 0 0 0" x:Name="CheckBox3" Content="English" Checked="CheckBox1_Checked" Unchecked="CheckBox1_notChecked"></CheckBox>
+                            <CheckBox Margin="10 0 0 0" x:Name="CheckBox4" Content="Math" Checked="CheckBox1_Checked" Unchecked="CheckBox1_notChecked"></CheckBox>
+                            <CheckBox Margin="10 0 0 0" x:Name="CheckBox5" Content="Physics" Checked="CheckBox1_Checked" Unchecked="CheckBox1_notChecked"></CheckBox>
+                        </StackPanel>
+                        <TextBox x:Name="Subjects" HorizontalAlignment="Left" Text="{Binding StudentSubjectsst ,UpdateSourceTrigger=PropertyChanged}" Width="300" Height="30" ></TextBox>
+                    </Grid>
+                </StackPanel>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="STSAVE" Visibility="Hidden" Grid.Column="0" Margin="0 10 0 10"   Width="100" Height="30" HorizontalAlignment="Center" Command="{Binding SaveNewst}" Click="STSAVE_Click">
+                        <ContentControl Content="Save New" FontSize="14" FontFamily="Cooper"></ContentControl>
+                    </Button>
+                    <Button Content="Remove" Grid.Column="1" FontSize="14" FontFamily="Cooper" Margin="0 10 0 10"   Width="100" Height="30" HorizontalAlignment="Center" Command="{Binding Remove}">
+                    </Button>
+                    <Button Grid.Column="2" Margin="0 10 0 10"   Width="100" Height="30" HorizontalAlignment="Center" Command="{Binding BackToMainst}">
+                        <ContentControl Content="Back" FontSize="14" FontFamily="Cooper"></ContentControl>
+                    </Button>
+                </Grid>
+            </Grid>
+            <StackPanel Grid.Column="1" Margin="10 50 10 10">
+                <Image Width="120" Height="120" Source="{Binding StudentImagest ,UpdateSourceTrigger=PropertyChanged}"/>
+                <Button x:Name="Upload" Visibility="Hidden" Grid.Row="4" Margin="0 10 0 10"   Width="120" Height="30" HorizontalAlignment="Center" Grid.Column="0" Command="{Binding UploadPhotost}" >
+                    <ContentControl Content="Upload Image" FontSize="14" FontFamily="Cooper"></ContentControl>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
